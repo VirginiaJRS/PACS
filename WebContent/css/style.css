@@ -1,0 +1,306 @@
+/**
+	Style for PACS Query Interface
+	Author : Ziheng Sun
+	Date : 2015.08.06
+**/
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+
+body {
+	background-image: url("../images/white_brick_bg.gif");
+	background-position: left top;
+	background-attachment:fixed;
+	font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;
+	font-size: 20px;
+	padding:0;
+	width:100%;
+	min-height: 100%;
+	margin: 0 0 10em; 
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 10em;
+    width: 100%;
+    background-image: url("../images/cityback2_cut.jpg");
+	color: white;
+}
+
+h1 {
+    font-size: 35px;
+    color: white;
+    text-align:left;
+    display:inline-block;
+    background-color: #8585B1;
+	margin: 0;
+	margin-top: 45px;
+	margin-left: 40px;
+	padding: 4px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p, input, select, button {
+    font-size: 20px;
+}
+
+header {
+	height:8em; 
+	width:100%; 
+	/**background-image: url("../images/earthlight.jpg");**/
+	background-image: url("../images/cityback_cut.jpg");
+}
+
+nav {
+	width:100%;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background:transparent;
+	/*background-color:  #E6E6E6;*/
+}
+
+/*footer {
+	border:none;
+	background-image: url("/PACS/images/background4.jpg");
+	color: white;
+	width:100%;
+	padding:0;
+	margin:0;
+ 	height: 10em;
+}*/
+
+.blankunderneathcover {
+	height: 10em;
+}
+
+.contactarea, .contactarea tr td, .contactarea tr td p{
+	width:100%;
+	text-align: center;
+}
+
+.PACSClient {
+	background: transparent;
+	/*background-color: white;
+	border-left: 1px solid black;
+	border-right: 1px solid black;*/
+	/*border-bottom: 1px solid black;
+	margin:0px auto;*/
+	text-align: left ;
+	width: 90%;
+	min-height: 100%;
+	height: auto;
+	padding: 10px;
+	margin: 0 auto 10em; ; /*add by Ziheng on 8/13/2015*/
+}
+
+.PACSClient h1 {
+	text-align: center;
+}
+
+.PACSClient h2 {
+	text-align: center;
+}
+
+.PACSClient p {
+	text-align: left;
+}
+
+.PACSClient p.submit {
+	text-align: center;
+}
+
+.PACSClient table {
+	width: 100%;
+	border-collapse:collapse;
+}
+
+.PACSClient table.submittable, .PACSClient table.intro {
+	width: 100%;
+	border:none;
+}
+
+.PACSClient table.submittable tr td {
+	border: none;
+	text-align: center;
+}
+
+.PACSClient table tr td {
+}
+
+.PACSClient table tr td p  {
+	text-align: center;
+	padding: 0;
+	margin:0;
+}
+
+.PACSClient table tr td p.title  {
+	text-align: center;
+	background-color: #33AD5C;
+	padding: 3px;
+	font-weight: bold;
+}
+
+.PACSClient table, td {
+ 			border: 1px solid green;
+}
+
+
+
+.PACSClient table tr td p.category  {
+	text-align: center;
+	margin: 10px;
+	color: red;
+}
+
+
+.PACSClient table tr td p.category select {
+	width: 600px;
+}
+
+.PACSClient table tr td p.category input.url {
+	width: 600px;
+}
+
+
+.PACSClient h3, p {
+	text-align: left;
+}
+
+.PACSClient table.intro {
+	background: transparent;
+	/*background-color: white;
+	border-left: 1px solid black;
+	border-right: 1px solid black;*/
+	/*border-bottom: 1px solid black;*/
+	margin:0px auto;
+}
+
+.PACSClient table.intro tr td{
+	border:none;
+	border-collapse: collapse;
+	vertical-align: top;
+	padding-left:10px;
+}
+
+.PACSClient table.intro tr td p{
+	margin: 0;
+	text-align: left ;
+}
+.PACSClient table.intro tr td h3{
+	margin: 0;
+	text-align: left ;
+	border-bottom: 3px dotted gray;
+}
+
+.PACSClient table.intro tr td img {
+	
+	width: 600px;
+	height: 350px;
+}
+
+.PACSClient table.intro tr td p.register {
+	text-align: center;
+	background-color: yellow;
+	color: red;
+	font-size: 30px;
+	font-family: "Times New Roman", Georgia, Serif;
+	padding-top: 0.5em;
+	padding-bottom:0.5em;
+}
+
+.PACSClient table.intro tr td p.register a {
+	text-align: center;
+	text-decoration: underline;
+}
+
+
+
+.PACSClient table tr td p.explaination {
+	font-size: 15px;
+	text-align: left;
+}
+
+.PACSClient table.intro tr td ul li p.space2em {
+	line-height: 3;
+}
+
+.PACSClient table.intro tr td p.figure {
+	line-height: 2;
+	text-align: center;
+}
+
+.mapselector, .mapselector table {
+	border: none;
+	border-collapse: collapse;
+}
+
+.mapselector table tr td {
+	text-align: center;
+	border: none;
+}
+
+.googlemapcontainer {
+	width: 100%;
+	height: 200px;
+}
+
+.timeselector, .timeselector table, table tr td{
+	border: none;
+	border-collapse: collapse;
+	padding: 4px;
+}
+
+.timeselector table tr td input {
+	width: 350px;
+}
+
+.timeselector table tr td:first-child {
+	width: 35%;
+	text-align: right;
+}
+.timeselector table tr td:nth-child(2) {
+	text-align: left;
+}
+
+.noticeimage {
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.orderid {
+	color: red;
+	text-decoration: underline;
+}
+
+.wsdl {
+	width: 350px;
+	
+}
+
+.whitelink {
+	color: white;
+}
+
+.loading-image {
+	 
+	display:block;
+	/*margin: 0 auto;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	margin: -50px 0px 0px -50px;
+}
+
