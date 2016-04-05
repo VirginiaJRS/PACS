@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- #******************************************************************************
+#
+# PACS online system
+# ---------------------------------------------------------
+# Parameterless automatic classification system.
+#
+# Copyright (C) 2015 CSISS, GMU (http://csiss.gmu.edu),
+# Ziheng Sun (szhwhu@gmail.com)
+#
+# This source is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free
+# Software Foundation; either version 2 of the License, or (at your option)
+# any later version.
+#
+# This code is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+# details.
+#
+# A copy of the GNU General Public License is available on the World Wide Web
+# at <http://www.gnu.org/copyleft/gpl.html>. You can also obtain it by writing
+# to the Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston,
+# MA 02111-1307, USA.
+#
+#****************************************************************************** -->
+<html>
+	<head>
+		<title>Parameterless Automatic Classification System - PACS</title>
+		<link href="favicon.ico" rel="bookmark" type="image/x-icon" />
+		<link href="favicon.ico" rel="icon" type="image/x-icon" />
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+		<link rel="stylesheet" media="all" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>PACS: Parameterless Automatic Classification System</h1>	
+		</header>
+		<nav>
+			| <a href="index.html">Home</a> | 
+			<a href="doc.html">Document</a> | 
+			<a href="demo.html">Demonstration</a> |
+			<a href="about.html">About</a> |
+		</nav>
+		
+		<form>
+			<div class="PACSClient" id="contentdiv">
+				<table>
+					<tr>
+						<td>
+							<p class="title">Specify a Target Image</p>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="category">
+								Input an image URL: <input class="url" type="text" value="" id="imgurl"><font color="red">*</font>
+							</p>
+							<p class="category"><font color="black">Or</font> Upload an image: <input id="upload" class="upload" type="button" value="Upload"><font color="red">**</font></p>
+							<p class="explaination"><font color="red">*</font>The URL must be accessible by the server. Because our server is located in a secure domain which is operated by George Mason University, there are some secure rules our server has to follow like we cannot visit the outside servers through the ports other than 80. It is strongly suggested to use the uploading function instead of only inputting an image URL.</p>
+							<p class="explaination"><font color="red">**</font>The maximum size limit of the submitted images is 2 MB. This limit also applies to the image specified by URL. The accepted formats include JPEG, JPG, GIF, PNG, GeoTiff. </p>
+						</td> 
+					</tr>
+				</table>
+				<br>				
+				<table class="submittable">
+					<tr>
+						<td>
+							<input type="reset" value="Reset"  id="reset">
+						</td>
+						<td>
+							<input type="button" value="Classify"  id="classify">
+						</td>
+					</tr>
+				</table>
+				<img id="loading" class="loading-image" src="images/loading_org.gif">
+			</div>
+		</form>
+		<footer>
+			<table class="contactarea">
+				<tr>
+					<td>
+						<p>All rights are reserved by CSISS, GMU and Ziheng Sun. Any commercial usage without permit is prohibited.</p>
+						<p>Contact: Dr. Ziheng Sun; <a href="mailto:zsun@gmu.edu" class="whitelink">szhwhu@gmail.com</a>; (+1)703-993-6124.</p>
+						<p>Mailing Address: 4400 University Drive, MSN 6E1, Fairfax, VA 22030, USA</p>
+					</td>
+				</tr>
+			</table>
+		</footer>
+	</body>
+	
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js" ></script>
+	
+	<script type="text/javascript" src="js/pacs.js" ></script>
+	<script type="text/javascript" src="js/pacs.util.js" ></script>
+	<script type="text/javascript" src="js/pacs.upload.js" ></script>
+	<script type="text/javascript" src="js/pacs.classification.js" ></script>
+	<script type="text/javascript" src="js/pacs.button.js" ></script>
+	<script type="text/javascript" src="js/pacs.main.js" ></script>
+</html>
