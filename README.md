@@ -2,8 +2,6 @@ PACS online system
 ---------------------------------------------------------
 parameterless automatic classification system
 
-Copyright (C) Ziheng Sun (szhwhu@gmail.com)
-
 The source code of PACS aims to help you understand the backstage mechanism of processing an image in parameterless and automatic style. 
 
 It include three parts: web site, web service and workflow. 
