@@ -2,7 +2,7 @@ PACS online system
 ---------------------------------------------------------
 parameterless automatic classification system
 
-Copyright (C) CSISS GMU and Ziheng Sun (szhwhu@gmail.com)
+Copyright (C) Ziheng Sun (szhwhu@gmail.com)
 
 The source code of PACS aims to help you understand the backstage mechanism of processing an image in parameterless and automatic style. 
 
@@ -16,4 +16,4 @@ http://www3.csiss.gmu.edu/pacs/ontology/parameterrule.owl
 
 The web serivce part is responsible for actually processing images. It include a series of steps such as unsupervised classification, eliminating small objects, combining bands into one, turning raster to vector and supervised classification based on a sample database and the automatically generated input parameter configuration. The source code is written in C++. 
 
-The workflow part includes a workflow instance which is a jar. It can be zipped into two documents: a WSDL file and a BPEL file. The WSDL file describes the input parameters the workflow requires. The values for those input parameters are automatically reasoned out by the servlet program in the website part. The BPEL records the logic sequence of all the calls to the webservices to operate on the target image. The final output of the BPEL instance is a classified vector file. The workflow can be automatically executed by any BPEL engine like BPELPower (http://www3.csiss.gmu.edu/BPELPower). 
+The workflow part includes a workflow instance which is a jar. It can be zipped into two documents: a WSDL file and a BPEL file. The WSDL file describes the input parameters the workflow requires. The values for those input parameters are automatically reasoned out by the servlet program in the website part. The BPEL records the logic sequence of all the calls to the webservices to operate on the target image. The final output of the BPEL instance is a classified vector file. The workflow can be automatically executed by any BPEL engine. 
