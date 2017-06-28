@@ -6,11 +6,7 @@ The source code of PACS aims to help you understand the backstage mechanism of p
 
 It include three parts: web site, web service and workflow. 
 
-The important module in the website part is the code under the src/ folder which is responsible for reasoning an appropriate classification parameter configuration map for a specific image based a ontology database. The ontologies are stored in a MySQL database. The upper ontologies include two which can be accessed through the following two links:
-
-http://www3.csiss.gmu.edu/pacs/ontology/image.owl
-
-http://www3.csiss.gmu.edu/pacs/ontology/parameterrule.owl
+The important module in the website part is the code under the src/ folder which is responsible for reasoning an appropriate classification parameter configuration map for a specific image based a ontology database. The ontologies are stored in a MySQL database.
 
 The web serivce part is responsible for actually processing images. It include a series of steps such as unsupervised classification, eliminating small objects, combining bands into one, turning raster to vector and supervised classification based on a sample database and the automatically generated input parameter configuration. The source code is written in C++. 
 
