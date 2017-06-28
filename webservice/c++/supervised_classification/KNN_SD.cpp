@@ -504,25 +504,25 @@ int main(int argc,char* argv[]){
 		char* samples = "";
 		char* noclass = "false";
 		char* thres = "0.8";
-                for(int i=0;i<argc;i++){
-                        if(strcmp(argv[i],"-i")==0){
-                                vectorfilepath = argv[i+1];
-                                printf("vector file path: %s\n",vectorfilepath);
-                        }else if(strcmp(argv[i],"-h")==0){
+		for(int i=0;i<argc;i++){
+			if(strcmp(argv[i],"-i")==0){
+					vectorfilepath = argv[i+1];
+					printf("vector file path: %s\n",vectorfilepath);
+			}else if(strcmp(argv[i],"-h")==0){
 				hierarchy = argv[i+1];
 				printf("class hierarchy: %s\n", hierarchy);
 			}else if(strcmp(argv[i],"-s")==0){
 				samples = argv[i+1];
 				printf("samples: %s\n", samples); 
 			}else if(strcmp(argv[i],"-k")==0){
-                                k = argv[i+1];
-                                printf("K value: %s\n",k);
-                        }else if(strcmp(argv[i],"-o")==0){
-                                outputfilepath = argv[i+1];
-                                printf("output file path: %s\n",outputfilepath);
-                        }else if(strcmp(argv[i],"-fl")==0){
-                                featurelist = argv[i+1];
-                                printf("feature list: %s\n",featurelist);
+					k = argv[i+1];
+					printf("K value: %s\n",k);
+			}else if(strcmp(argv[i],"-o")==0){
+					outputfilepath = argv[i+1];
+					printf("output file path: %s\n",outputfilepath);
+			}else if(strcmp(argv[i],"-fl")==0){
+					featurelist = argv[i+1];
+					printf("feature list: %s\n",featurelist);
 			}else if(strcmp(argv[i],"-noclass")==0){
 				noclass = argv[i+1];
 				printf("noclass: %s\n",noclass);
